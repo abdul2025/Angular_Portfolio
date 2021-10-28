@@ -1,0 +1,64 @@
+.custom-shadow {
+  // box-shadow: rgb(28 28 28 / 19%) 0px 10px 20px, rgb(76 76 76 / 23%) 0px 6px 6px;
+}
+
+a {
+  color: #5c5c3a;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+.brandName {
+  font-family: 'Permanent Marker', cursive;
+
+  font-weight: 900;
+  color: #5c5c3a;
+
+}
+.hireME {
+  border: 2px solid black;
+  width: 120%;
+  text-align: center;
+}
+
+i {
+  padding-top: 2%  !important;
+}
+
+li {
+  text-align: center;
+}
+
+
+.imgBrand {
+  width: 150px;
+  height: 50px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+}
+
+.navbar-dark {
+  background-color:  #5c5c3a;
+  opacity: 0.3;
+}
+a:hover{
+  color: #9f9f8c !important;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  a:hover{
+    background-color: #9f9f8c !important;
+    color: aliceblue !important;
+  }
+}
+
+
