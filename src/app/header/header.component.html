@@ -10,16 +10,19 @@
       <div class="collapse navbar-collapse  " [ngClass]="isMobileMode ? 'show' : ''" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link " [routerLink]="['/']" (click)="scrolling('/')" routerLinkActive="router-link-active" aria-current="page">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+            <a class="nav-link " [routerLink]="['about']" (click)="scrolling('about')" routerLinkActive="router-link-active" aria-current="page" >About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">WORKS</a>
+            <a class="nav-link " aria-current="page" [routerLink]="['projects']" (click)="scrolling('projects')" routerLinkActive="router-link-active">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">BLOGS</a>
+            <a class="nav-link " aria-current="page" [routerLink]="['hobbies']" (click)="scrolling('hobbies')" routerLinkActive="router-link-active">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" [routerLink]="['blog']" (click)="scrolling('blog')" routerLinkActive="router-link-active">Blogs</a>
           </li>
         </ul>
       </div>

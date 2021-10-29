@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SidebarMediaComponent } from './landing-page/sidebar-media/sidebar-media.component';
 import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
     LandingPageComponent,
     SidebarMediaComponent,
     HeaderComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

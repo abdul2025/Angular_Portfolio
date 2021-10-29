@@ -1,5 +1,7 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -26,7 +28,7 @@ export class HeaderComponent implements OnInit {
   isMobileMode = false
 
 
-  constructor() { }
+  constructor(private router: Router, private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
   }
@@ -43,6 +45,15 @@ export class HeaderComponent implements OnInit {
     this.isMobileMode = !this.isMobileMode
     console.log(this.isMobileMode)
 
+  }
+
+
+
+  scrolling(route: string) {
+    console.log(route)
+    // this.router.navigate([route])
+    // this.router.navigate([], { fragment: route });
+    this.scroller.scrollToAnchor(route);
   }
 
 }

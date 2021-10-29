@@ -1,5 +1,5 @@
 .customBackGround {
-  background-color: #eff0f1;
+  background-color: #ffffff;
     /* The image used */
   // background-image: url("../../assets/imgs/brick-wall.jpg");
 
@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 900px) {
   .custom {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .customTop {
@@ -40,6 +40,51 @@
   .customBTN {
     display: none;
   }
+
+  .cutom {
+    position: relative;
+    bottom: 40px !important;
+  }
+
+  .circle {
+    position: relative;
+    bottom: 0px !important;
+  }
+
+  h5, .custom-content {
+    text-align: center !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+
+  .circle-icon {
+    position: relative;
+    top: 0px !important;
+    right: 0px !important;
+    left: 45% !important;
+  }
+
+  .custom-icon {
+    position: relative;
+    top: 0px !important;
+    right: 0px !important;
+    left: 40% !important;
+
+  }
+
+  p {
+    width: 100% !important;
+  }
+}
+
+
+p {
+  width: 50vw;
 }
 
 
@@ -52,15 +97,7 @@
 
 }
 
-.topicsBehind {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 900;
-  color: #5c5c3a;
-  opacity: 0.3;
-  position:absolute;
-  z-index: 0;
-  margin-top: -2%;
-}
+
 
 
 .cutom {
@@ -84,8 +121,28 @@
   z-index: 1;
   position: relative;
   bottom: 20px;
+}
 
+.circle-icon {
+  height: 25px;
+  width: 25px;
+  background-color: #898678;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 0;
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
 
+.custom-icon {
+  z-index: 99;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.col-md-6 {
+  padding-top: 4%;
 }
 
 
