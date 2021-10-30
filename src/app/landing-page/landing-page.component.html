@@ -1,4 +1,4 @@
-<div class="customBackGround" style="min-height: 100vh" >
+<div class="customBackGround" @LandingPage style="min-height: 100vh" >
   <div class="jumbotron vertical-center">
     <div class="container px-4 px-lg-5">
       <!-- Featured Project Row-->
@@ -13,8 +13,9 @@
               </div>
           </div>
           <div class="col-xl-1 col-lg-1 customBTN" [@Title]="value">
+            <div class="circleInTopic"></div>
             <i
-            aria-hidden="true" class="topics">{{value}}</i>
+            aria-hidden="true" class="topics" style="color: black;">{{value}}</i>
           </div>
           <div class="col-xl-6 col-lg-6 customTop">
             <img class="img-fluid mb-3 mb-lg-0" style="padding-top: 20%;" src="https://bugrio-themeforest.firebaseapp.com/images/banner/banner1.png" alt="" />

@@ -11,7 +11,7 @@ import { interval } from 'rxjs';
     trigger('Title', [
       state('in', style({
         opacity: 1,
-        transform: 'translateX(-1600px)',
+        transform: 'translateX(0px)',
       })),
       transition('* => *', [
         style({
@@ -21,7 +21,20 @@ import { interval } from 'rxjs';
         animate(800)
       ]),
     ]),
-  ]
+    trigger('LandingPage', [
+      state('in', style({
+        opacity: 1,
+        transform: 'translateX(0)'
+      })),
+      transition('* => *', [
+        style({
+          opacity: 0,
+          transform: 'translateX(1000px)'
+        }),
+        animate(1100)
+      ]),
+    ]),
+  ],
 })
 export class LandingPageComponent implements OnInit {
 
@@ -48,11 +61,15 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
     // RxJS v6+
-    const source = interval(3000);
+    const source = interval(2500);
     const subscribe = source.subscribe(val =>{
       this.checkChanges()
     } );
   }
+
+
+
+
 
 
 

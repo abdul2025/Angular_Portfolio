@@ -9,6 +9,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SidebarMediaComponent } from './landing-page/sidebar-media/sidebar-media.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { AboutComponent } from './about/about.component';
     SidebarMediaComponent,
     HeaderComponent,
     AboutComponent,
+    ProjectsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

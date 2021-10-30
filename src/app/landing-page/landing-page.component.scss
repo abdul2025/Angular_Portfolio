@@ -45,12 +45,26 @@
 
 .topics {
   font-family: 'Permanent Marker', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
   color: #5c5c3a;
   z-index: 99;
 
 }
+
+.circleInTopic {
+  height: 45px;
+  width: 45px;
+  background-color: #bdaa52;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 0;
+  position: relative;
+  top: 50px;
+  right: 17px;
+  opacity: 0.3;
+}
+
 
 .topicsBehind {
   font-family: 'Permanent Marker', cursive;
